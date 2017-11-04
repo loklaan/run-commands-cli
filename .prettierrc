@@ -1,0 +1,6 @@
+printWidth: 80
+parser: flow
+semi: true
+singleQuote: true
+trailingComma: none
+bracketSpacing: true

@@ -1,0 +1,34 @@
+{
+  "name": "run-commands-cli",
+  "version": "1.0.0",
+  "description": "Run commands in parallel w/ nice reporting.",
+  "main": "src/index.js",
+  "author": "Lochlan Bunn <bunn@lochlan.io>",
+  "license": "MIT",
+  "bin": {
+    "run-commands": "./index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel --out-dir lib src",
+    "format": "prettier src/**/*.js --write",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "execa": "^0.8.0",
+    "log-symbols": "^2.1.0",
+    "log-update": "^2.2.0",
+    "ora": "^1.3.0",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.58.0",
+    "prettier": "^1.7.4"
+  }
+}
