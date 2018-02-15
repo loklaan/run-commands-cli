@@ -6,7 +6,7 @@
   "author": "Lochlan Bunn <bunn@lochlan.io>",
   "license": "MIT",
   "bin": {
-    "run-commands": "./index.js"
+    "run-commands": "./lib/cli.js"
   },
   "files": [
     "lib"
