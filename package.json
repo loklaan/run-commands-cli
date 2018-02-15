@@ -1,6 +1,6 @@
 {
   "name": "run-commands-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Run commands in parallel w/ nice reporting.",
   "main": "src/index.js",
   "author": "Lochlan Bunn <bunn@lochlan.io>",
