@@ -69,7 +69,7 @@ function printFrame() {
         line = spinner.frame();
       }
 
-      return `\n${line}`;
+      return `${line}`;
     })
     .join('');
 
