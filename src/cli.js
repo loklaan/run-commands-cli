@@ -86,15 +86,20 @@ function printErrors() {
     const error = reports[cmd].error;
     if (error) {
       const stderr = error.stderr;
+      const stdout = error.stdout;
       let section = `\n${c.white.bold.underline(cmd)} (Exit code ${c.bold(
         error.code
       )})`;
-      section += stderr ? `:\n\n${stderr}` : '';
+      section += stderr ? `:\n\n${c.white.dim.italic('▷ STDERR')}\n\n${stderr.replace(/^\n/, '')}` : '';
+
+      if (stdout) {
+        section += `\n\n${c.white.dim.italic('▷ STDOUT')}\n\n${stdout.replace(/^\n/, '')}`;
+      }
 
       console.error(section);
     }
   });
-  console.error(`\n${c.red('-------------------------------')}`);
+  console.error(`${c.red('-------------------------------')}\n`);
 }
 
 function renderCli() {
