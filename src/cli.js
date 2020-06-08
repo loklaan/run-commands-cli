@@ -89,7 +89,7 @@ function printErrors() {
       let section = `\n${c.white.bold.underline(cmd)} (Exit code ${c.bold(
         error.code
       )})`;
-      section += stderr ? `:\n${stderr}` : '';
+      section += stderr ? `:\n\n${stderr}` : '';
 
       console.error(section);
     }
