@@ -57,7 +57,7 @@ const reports: { [key: string]: Report } = commands.reduce((r, c) => {
 
 function printFrame() {
   const frame = Object.keys(reports)
-    .map(cmd => {
+    .map((cmd, i) => {
       const { done, error, spinner } = reports[cmd];
 
       let line;
@@ -69,7 +69,7 @@ function printFrame() {
         line = spinner.frame();
       }
 
-      return `${line}`;
+      return `${i > 0 ? '\n' : ''}${line}`;
     })
     .join('');
 
