@@ -1,3 +1,7 @@
+<p align="center">
+<em>While this was fun to make, I actually suggest <strong>you use a more established package</strong> like <a href="https://github.com/kimmobrunfeldt/concurrently">concurrently</a>. 👍</em>
+</p>
+
 # Run Commands
 
 > _Run commands in parallel w/ nice reporting._
